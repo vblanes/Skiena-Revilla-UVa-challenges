@@ -24,13 +24,8 @@ def ejercicio(i, j):
     return max(results)
 
 if __name__ == '__main__':
-    # xurro = input()
-    # xurro = open('pilila', 'r').read()
-    # linies = xurro.split('\n')
-    # for lin in linies:
     for lin in sys.stdin:
         try:
-            #lin = lin.replace('\t', ' ')
             i = int(lin.strip().split(' ')[0])
             j = int(lin.strip().split(' ')[-1])
             print(i, j, ejercicio(i, j))
